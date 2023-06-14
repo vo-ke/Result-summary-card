@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sub1 {
+	@apply h-14  rounded-2xl px-5 py-4;
+}
+
+.sub2 {
+	@apply absolute inset-y-0 right-0;
+}

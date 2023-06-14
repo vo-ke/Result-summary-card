@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- GOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Sarabun:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="ext.css">
+  
+</head>
+  <body class="flex align-middle justify-center md:py-20">
+    <section class="flex flex-col md:flex-row md:-space-x-8">
+
+     <!-- 1st half stuff -->
+      <nav class=" w-screen md:max-w-stndd bg-blue-600 rounded-b-3xl md:rounded-3xl  z-20">
+      <div class=" text-white   inset-x-0">
+        <div class="flex flex-col justify-center items-center">
+          <!-- heading, i guess -->
+           <h class="text-gray-300 text-xl font-bold font-sans my-6 flex items-stretch ">Your Result</h>
+
+           <!-- score board -->
+          <div class="rounded-full h-40 w-40 bg-gradient-to-b from-blue-800 to-blue-600 flex flex-col space-y-2 items-center justify-center">
+            <p class="text-7xl">76</p>
+            <p class="text-gray-400"> of 100</p>
+          </div>
+
+            <!-- remark -->
+          <h class="text-3xl mt-8 mb-4 ">
+              Great
+          </h>
+          <p class="text-gray-300 sm:mx-9 mx-11 text-center mb-12 md:mb-6">
+            You scored higher than 65% of the people who have taken the tests.
+          </p>
+
+
+        </div>
+      </div>
+      </nav>
+
+      <!-- 2nd half stuff -->
+
+      <div class="w-screen md:max-w-sm md:rounded-r-3xl md:shadow-2xl ">
+      <div class="mx-9 md:ml-16 my-6">
+        <h class="text-black ">
+           Summary 
+        </h>
+
+        <!-- summary of individual's behavior -->
+        <section class="flex flex-col mt-7 space-y-6 items-stretch">
+
+          <!-- Reaction base -->
+          <h1 class="h-14 bg-red-50 rounded-2xl px-5 py-4">
+            <p class="relative">
+               <span class="inline-flex ">
+                 <img src="assets\images\icon-reaction.svg" alt="lightnin" class="mr-4">
+                 <span class=" text-red-600">Reaction</span>
+               </span>
+              <span class="absolute inset-y-0 right-0">
+                80 / <span class="text-gray-400">100</span>
+              </span>
+            </p>
+          </h1>
+
+          <!-- memory base -->
+          <h2 class="sub1 bg-yellow-50">
+            <p class="relative">
+              <span class="inline-flex">
+                <img src="assets\images\icon-memory.svg" alt="brain rep" class="mr-4">
+                <span class="text-yellow-500">Memory</span>
+              </span>
+              <span class="sub2">92 / <span class="text-gray-400">100</span></span>
+            </p>
+          </h2>
+
+          <!-- verbal base -->
+          <h3 class="sub1 bg-green-50">
+            <p class="relative">
+              <span class="inline-flex">
+                <img src="assets\images\icon-verbal.svg" alt="message icon" class="mr-4">
+                <span class="text-green-500">Verbal</span>
+              </span>
+              <span class="sub2">
+                61 / <span class="text-gray-400">100</span>
+              </span>
+            </p>
+          </h3>
+
+          <!-- visual base -->
+          <h4 class="sub1 bg-blue-50">
+            <p class="relative">
+              <span class="inline-flex">
+                <img src="assets\images\icon-visual.svg" alt="some eye pic" class="mr-4">
+                <span class="text-blue-500">Visual</span>
+              </span>
+              <span class="sub2">
+                72 / <span class="text-gray-400">100</span>
+              </span>
+            </p>
+          </h4>
+        </section>
+
+        <section class="flex h-14 mt-10 bg-gray-700 hover:bg-blue-600 duration-300 ease-in-out cursor-pointer rounded-full text-white justify-center items-center">
+          Continue
+        </section>
+
+      </div>
+      </div>
+    </section>
+
+  </body>
+</html> 
